@@ -28,8 +28,7 @@ override.tf.json
 # Include tfplan files to ignore the plan output of command: terraform plan -out=tfplan
 # example: *tfplan*
 
-## Go ##
-# Binaries for programs and plugins
+# Go
 *.exe
 *.exe~
 *.dll
