@@ -6,8 +6,7 @@ CWN has created a set of Google Appscript snipets that can be used with an Googl
 
 - [Repository contents](#repository-contents)
 - [Usage](#usage)
-- [Terraform Module Inputs](#terraform-module-inputs)
-- [Terraform Module Outputs](#terraform-module-outputs)
+
 
 [top](#top)
 
