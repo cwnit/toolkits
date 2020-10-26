@@ -11,7 +11,7 @@ CWN has created a set of Google Appscript snipets that can be used with an Googl
 [top](#top)
 
 ## Repository contents
-- [**columindexbynameandrow.gs** Allow a user to search Google sheet column by name.](https://github.com/cwnit/toolkits/blob/master/collections/googleappscript/google_sheets/columindexbynameandrow.gs)
+- [**columindexbynameandrow.gs**](https://github.com/cwnit/toolkits/blob/master/collections/googleappscript/google_sheets/columindexbynameandrow.gs)Allow a user to search Google sheet column by name.
 
 [top](#top)
 
