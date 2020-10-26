@@ -22,8 +22,8 @@ Googlescript requires understanding of Javascript.  For those of you just gettin
 ## Public ##
 | Material description | URL |
 | ---------- | ------------ |
-| Javascript basics | [!Link](https://www.w3schools.com/js/DEFAULT.asp) |
-| Appscript developer reference | [!Link] (https://developers.google.com/apps-script/reference/) |
+| Javascript basics | [Link](https://www.w3schools.com/js/DEFAULT.asp) |
+| Appscript developer reference | [Link](https://developers.google.com/apps-script/reference/) |
 
 
 
