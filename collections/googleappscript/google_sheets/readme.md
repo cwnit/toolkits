@@ -12,7 +12,7 @@ CWN has created a set of Google Appscript snipets that can be used with an Googl
 
 ## Repository contents
 | Name of Module | Description | Output Sample |
-| ---------- | ------------ |
+| ---------- | ---------------------------- | ---------------------------- |
 | [**columindexbynameandrow.gs**](https://github.com/cwnit/toolkits/blob/master/collections/googleappscript/google_sheets/columindexbynameandrow.gs) | Allow a user to search Google sheet column by name. | sample coming |
 - [**matchtext.gs**](https://github.com/cwnit/toolkits/blob/master/collections/googleappscript/google_sheets/matchtext.gs) The function searches for text within a string that is provided.  This can be accomplished with indexOf google function but accounts for simple error handling. 
 - [**getweeknumber**](https://github.com/cwnit/toolkits/blob/master/collections/googleappscript/google_sheets/getweeknumber) The function returns a number based on a date provided through the function.  The number is based on a standard calender year comprised of 52 weeks.
