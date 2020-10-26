@@ -19,7 +19,7 @@ CWN has created a set of Google Appscript snipets that can be used with an Googl
 # Usage
 Googlescript requires understanding of Javascript.  For those of you just getting started please visit this free tutorial that walks you through Javascript basics.
 
-## Public ##
+## Developer Information ##
 | Material description | URL |
 | ---------- | ------------ |
 | Javascript basics | [Link](https://www.w3schools.com/js/DEFAULT.asp) |
