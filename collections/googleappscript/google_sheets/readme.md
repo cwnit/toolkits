@@ -12,8 +12,8 @@ CWN has created a project of Google Appscript modules that can be easily include
 
 ## Repository contents
 
-| Name of Module | Description | Output Sample |
-| :-------- | :----------- | :------------------------------------------------------ |
+| Name of Module | Description | Output Sample          |
+| :-------- | :----------- | :------------------------- |
 | [**columindexbynameandrow.gs**](https://github.com/cwnit/toolkits/blob/master/collections/googleappscript/google_sheets/columindexbynameandrow.gs) | Allow a user to search Google sheet column by name. | sample coming |
 | [**matchmytext.gs**](https://github.com/cwnit/toolkits/blob/master/collections/googleappscript/google_sheets/matchtext.gs) | The function searches for text within a string that is provided.  This can be accomplished with indexOf google function but accounts for simple error handling. | *Limits:*  Supports strings, numbers must be converted   <br><br> *Input:* "helloworld" and "hello"  <br> <br> *Result*  0 (-1 means no match)  |
 | [**getweeknumber.gs**](https://github.com/cwnit/toolkits/blob/master/collections/googleappscript/google_sheets/getweeknumber) | The function returns a number based on a date provided.  The number is based on a standard calender year comprised of 52 weeks. | *Limits:*  Appsript Now() function is not supported   <br><br> *Input:* 10/26/2020 18:42:00 <br> <br> *Result* 44 |
