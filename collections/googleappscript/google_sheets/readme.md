@@ -23,8 +23,8 @@ Googlescript requires understanding of Javascript.  For those of you just gettin
 | Material description | URL |
 | ---------- | ------------ |
 | Javascript basics | [!Link](https://www.w3schools.com/js/DEFAULT.asp) |
+| Appscript developer reference | [!Link] (https://developers.google.com/apps-script/reference/) |
 
 
-https://developers.google.com/apps-script/reference/
 
 [top](#top)
