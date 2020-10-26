@@ -16,7 +16,7 @@ CWN has created a project of Google Appscript modules that can be easily include
 | :---------- | :------------------------------- | :--------------------------------------------------- |
 | [**columindexbynameandrow.gs**](https://github.com/cwnit/toolkits/blob/master/collections/googleappscript/google_sheets/columindexbynameandrow.gs) | Allow a user to search Google sheet column by name. | sample coming |
 | [**matchtext.gs**](https://github.com/cwnit/toolkits/blob/master/collections/googleappscript/google_sheets/matchtext.gs) | The function searches for text within a string that is provided.  This can be accomplished with indexOf google function but accounts for simple error handling. | sample coming |
-| [**getweeknumber**](https://github.com/cwnit/toolkits/blob/master/collections/googleappscript/google_sheets/getweeknumber) | The function returns a number based on a date provided through the function.  The number is based on a standard calender year comprised of 52 weeks. | sample coming |
+| [**getweeknumber**](https://github.com/cwnit/toolkits/blob/master/collections/googleappscript/google_sheets/getweeknumber) | The function returns a number based on a date provided.  The number is based on a standard calender year comprised of 52 weeks. | sample coming |
 
 [top](#top)
 
@@ -29,6 +29,7 @@ Googlescript requires a foundational understanding of Javascript.  For those of 
 | ---------- | ------------ |
 | Javascript basics | [Link](https://www.w3schools.com/js/DEFAULT.asp) |
 | Appscript developer reference | [Link](https://developers.google.com/apps-script/reference/) |
+| Appscript developer guides | [Link](https://developers.google.com/google-ads/scripts/docs/your-first-script) |
 
 
 
