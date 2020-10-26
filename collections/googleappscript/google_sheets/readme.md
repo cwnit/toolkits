@@ -18,7 +18,7 @@ CWN has created a project of Google Appscript modules that can be easily include
 | [**matchtext.gs**](https://github.com/cwnit/toolkits/blob/master/collections/googleappscript/google_sheets/matchtext.gs) | The function searches for text within a string that is provided.  This can be accomplished with indexOf google function but accounts for simple error handling. | sample coming |
 | [**getweeknumber**](https://github.com/cwnit/toolkits/blob/master/collections/googleappscript/google_sheets/getweeknumber) | The function returns a number based on a date provided.  The number is based on a standard calender year comprised of 52 weeks. | sample coming |
 | [**subdaysfromdate**](https://github.com/cwnit/toolkits/blob/master/collections/googleappscript/google_sheets/subdaysfromdate) | The function subtracts days from a specified start date.  The date must be in a valid Google format see Appscript develoepr reference for date formatting | |
-| [**adddaysfromdate**]() | The function adds days to a specified start date.  The date must be in a valid Google format see Appscript develoepr reference for date formatting | |
+| [**adddaysfromdate**](https://github.com/cwnit/toolkits/blob/master/collections/googleappscript/google_sheets/adddaysfromdate) | The function adds days to a specified start date.  The date must be in a valid Google format see Appscript develoepr reference for date formatting | |
 
 [top](#top)
 
