@@ -2,14 +2,14 @@
 
 <table style="width: 300px; float: left;" border="0" cellspacing="0">
 <tbody>
-<tr>
-<td>
-  <p align="Left">
-    <img src="./images/google-sheets-logo.png" width="195" height="75">
+  <tr>
+    <td>
+      <p align="Left">
+        <img src="./images/google-sheets-logo.png" width="195" height="75">
 
-  </p></td>
-<td>CWN has created a project supporting Google Appscript modules designed to support Google Sheets and help the Google community with quick modules that can save time and add effiencies to teams and individuals using Google Sheets.</td>
-</tr>
+      </p></td>
+    <td>CWN has created a project supporting Google Appscript modules designed to support Google Sheets and help the Google community with quick modules that can save time and add effiencies to teams and individuals using Google Sheets.</td>
+  </tr>
 </tbody>
 </table>
 
