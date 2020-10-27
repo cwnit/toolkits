@@ -1,2 +1,2 @@
 
-![image info](./images/create-a-google-apps-script.jpeg =100x20)
+![](./images/create-a-google-apps-script.jpeg =250)
