@@ -2,6 +2,17 @@
 
 CWN has created a project of Google Appscript modules that can be easily included into any spreadsheet that can save time and add effiencies to teams and individuals using Google Appscrpt.
 
+## Table with only the class specified {#table-with-only-the-class-specified}
+
+<table style="width: 200px; float: left;" border="0" cellspacing="0">
+<tbody>
+<tr>
+<td>sadaD</td>
+<td>dsfas</td>
+</tr>
+</tbody>
+</table>
+
 ## Table of Contents
 
 - [Repository contents](#repository-contents)
