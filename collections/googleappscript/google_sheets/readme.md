@@ -8,7 +8,7 @@
 <tr>
 <td>
   <p align="Left">
-    <img src="./images/google-sheets-logo.png" width="100" height="50">
+    <img src="./images/google-sheets-logo.png" width="150" height="75">
 
   </p></td>
 <td>CWN has created a project of Google Appscript modules that can be easily included into any spreadsheet that can save time and add effiencies to teams and individuals using Google Appscrpt.</td>
