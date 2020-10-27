@@ -1,8 +1,5 @@
 # <a name="top">CWN Google Appscript Google Sheet Library</a> 
 
-
-
-
 <table style="width: 300px; float: left;" border="0" cellspacing="0">
 <tbody>
 <tr>
@@ -11,7 +8,7 @@
     <img src="./images/google-sheets-logo.png" width="175" height="75">
 
   </p></td>
-<td>CWN has created a project of Google Appscript modules that can be easily included into any spreadsheet that can save time and add effiencies to teams and individuals using Google Appscrpt.</td>
+<td>CWN has created a project supporting Google Appscript modules designed to support Google Sheets and help the Google community with quick modules that can save time and add effiencies to teams and individuals using Google Sheets.</td>
 </tr>
 </tbody>
 </table>
