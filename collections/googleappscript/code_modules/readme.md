@@ -4,7 +4,7 @@
 <tbody>
   <tr>
     <td>
-      <p align="Left"> <img src="./images/code_gas.png" width="195" height="75"> </p></td>
+      <p align="Left"> <img src="./images/code_gas.png" width="100" height="100"> </p></td>
     <td>CWN has created a project supporting Google Appscript modules designed to support code functions that can automate Google Suite actions.</td>
  </tr>
 </tbody>
