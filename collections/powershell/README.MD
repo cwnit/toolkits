@@ -4,7 +4,7 @@
 <tbody>
   <tr>
     <td>
-      <p align="Left"> <img src="/cwnit/toolkits/imgs/powershell.png" width="195" height="75"> </p></td>
+      <p align="Left"> <img src="/imgs/powershell.png" width="195" height="75"> </p></td>
     <td>CWN has created a project supporting Powershell modules that can help automate job functions.</td>
  </tr>
 </tbody>
