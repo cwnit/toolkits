@@ -28,10 +28,10 @@
 </tr>
 <tr>
 <td><a href="https://github.com/cwnit/toolkits/blob/master/collections/googleappscript/code_modules/deletesheetTabs.gs">deletesheetTabs.gs</a></td>
-<td>Provides the ability to delete all tabs that don't have a specific name.</td>
+<td>The module provides developers the ability to delete all tabs. Included is the ability to exempt specific tabs based on a key value provided.  This can allow teams using sheets to create working tabs that can later be cleaned up.</td>
 <td>
-<p><em><strong>Limits:</strong></em> The matching variable looks for any sheet that has the keyword in it. Any sheet that doesn't have the keyword will be deleted. You will need to grant the sheet permissions to delete and modify the sheet. Requires minimum editor access. The function also references the</p>
-<p><em><strong>Input:</strong></em>&nbsp;" strsheetname: is the key word being searched for.<br /><br /><em><strong>Result:</strong></em>&nbsp;All sheets with matching name are deleted.</p>
+<p><em><strong>Limits:</strong></em> The matching variable is a key that looks for any sheet that has the keyword in it. Any sheet that doesn't have the keyword will be deleted. You will need to grant the sheet permissions to delete and modify the sheet. Requires minimum editor access. The function also references the  <a href="https://github.com/cwnit/toolkits/blob/master/collections/googleappscript/google_sheets/matchtext.gs">matchtext.gs</a> function which is reuqired for the key searchkey to work properly.</p>
+<p><em><strong>Input:</strong></em>&nbsp;" strsheetname: is the key word being searched for.<br /><br /><em><strong>Result:</strong></em>&nbsp;All sheets with matching name are deleted.</p> 
 </td>
 </tr>
 <tr>
