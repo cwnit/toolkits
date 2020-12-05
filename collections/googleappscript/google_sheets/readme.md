@@ -1,7 +1,7 @@
 # <a name="top">CWN Google Appscript Google Sheet Library</a> 
 
-|<img src="./images/google-sheets-logo.png" width="195" height="75">  | The CWN project supports Google Appscript modules designed to working samples of code in conjunction with Google Sheets.  Our intention is to provide the Google community with working modules that can save time and add effiencies to teams and individuals using Google Sheets |
- :-------- | :----------- | 
+| <img src="./images/google-sheets-logo.png" width="210" height="75">  | The CWN project supports Google Appscript modules designed to working samples of code in conjunction with Google Sheets.  Our intention is to provide the Google community with working modules that can save time and add effiencies to teams and individuals using Google Sheets |
+| :-------------- | :----------- | 
 
 ## Table of Contents
 
