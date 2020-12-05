@@ -35,7 +35,7 @@
 </td>
 </tr>
 <tr>
-<td><a href="https://github.com/cwnit/toolkits/blob/master/collections/googleappscript/code_modules/testOnSubmit.gs">testOnSubmit.gs.gs</a></td>
+<td><a href="https://github.com/cwnit/toolkits/blob/master/collections/googleappscript/code_modules/testOnSubmit.gs">testOnSubmit.gs</a></td>
 <td>The module is handy to support On Submit event triggers in Google. Works very well when testing Form submissions without having to constantly enter a new form submission.&nbsp;</td>
 <td>
 <p><em><strong>Limits:&nbsp;</strong></em></p>
