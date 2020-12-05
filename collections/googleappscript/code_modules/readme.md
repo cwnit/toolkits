@@ -3,7 +3,7 @@
 <table style="width: 300px; float: left;" border="0" cellspacing="0">
 <tbody>
   <tr>
-    <td style="width: 125px;">
+    <td style="width: 150px;">
       <p align="Left"> <img src="./images/code_gas.png" width="100" height="100"> </p></td>
     <td>The CWN library supports custom code modules which have been developed to help witth Google Suite code automation.  Our intention is to provide the Google community with working modules that can save time and add effiencies to teams and individuals.</td>
  </tr>
