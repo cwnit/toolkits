@@ -1,6 +1,6 @@
 # <a name="top">CWN Google Appscript Google Module Library</a> 
 
-| <img src="./images/code_gas.png" width="135" height="100">  | The CWN library supports custom code modules which have been developed to help witth Google Suite code automation.  Our intention is to provide the Google community with working modules that can save time and add effiencies to teams and individuals. |
+| <img src="./images/code_gas.png">  | The CWN library supports custom code modules which have been developed to help witth Google Suite code automation.  Our intention is to provide the Google community with working modules that can save time and add effiencies to teams and individuals. |
 | :-------------- | :----------- | 
 
 ## Table of Contents
