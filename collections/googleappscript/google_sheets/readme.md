@@ -1,11 +1,11 @@
 # <a name="top">CWN Google Appscript Google Sheet Library</a> 
 
-<table style="width: 300px; float: left;" border="0" cellspacing="0">
+<table style="width: 300px; float: left;" border="0" border-spacing:="0" border-collapse= "collapse" cellspacing="0">
 <tbody>
   <tr>
     <td>
       <p align="Left"> <img src="./images/google-sheets-logo.png" width="195" height="75"> </p></td>
-    <td>CWN has created a project supporting Google Appscript modules designed to support Google Sheets and help the Google community with quick modules that can save time and add effiencies to teams and individuals using Google Sheets.</td>
+    <td>The CWN project supports Google Appscript modules designed to working samples of code in conjunction with Google Sheets.  Our intention is to provide the Google community with working modules that can save time and add effiencies to teams and individuals using Google Sheets.</td>
  </tr>
 </tbody>
 </table>
