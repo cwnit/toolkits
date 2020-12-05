@@ -1,4 +1,4 @@
-function DeleteSheetTabs(strsheetname) 
+function DeleteSheetTabs(searchkey) 
 {
     
     // strsheetname is the sheet that you don't want to delete sheet
@@ -12,7 +12,7 @@ function DeleteSheetTabs(strsheetname)
     {
         var name = sheets[i].getName(); //get name of the worksheet in the array
         
-        valid = MatchMyText(strsheetname,name)
+        valid = MatchMyText(searchkey,name)
        
         if(valid != true) {
      

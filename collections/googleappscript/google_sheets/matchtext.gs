@@ -1,16 +1,15 @@
-function MatchMyText(mytext,mycompare)
+function MatchMyText(searchkey,mytext)
 {
   //mytext is the string value that has the string that we want to compare against
-  //mycompare is the string that we want to validate and see if it exist inside my text
+  //searchkey is the string that we want to validate and see if it exist inside my text
 
   var valid;
 
-  
   mytext = mytext.toString().toLowerCase();
-  mycompare = mycompare.toString().toLowerCase();
-
+  searchkey = searchkey.toString().toLowerCase();
   
-   if(mytext.indexOf(mycompare)>-1)
+  
+   if(mytext.toString().indexOf(searchkey)>-1)
    {
    
      valid = true;
@@ -22,6 +21,5 @@ function MatchMyText(mytext,mycompare)
    }
     
    return valid 
-
 
 } 
