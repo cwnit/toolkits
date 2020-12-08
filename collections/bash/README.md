@@ -4,7 +4,7 @@
 <tbody>
   <tr>
     <td>
-      <p align="Left"> <img src="/imgs/bashicon.png" width="195" height="100"> </p></td>
+      <p align="Left"> <img src="./imgs/bashicon.png" width="195" height="100"> </p></td>
     <td>CWN has created a project supporting Bash scripting that can help automate job functions.</td>
  </tr>
 </tbody>
