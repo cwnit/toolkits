@@ -10,6 +10,9 @@ Our Collection Provides a variety of coding technologies and modules that can be
 | ---------- | ------------ |
 | [Google Appscript](https://github.com/cwnit/toolkits/tree/master/collections/googleappscript) | [![CircleCI](badge)]|
 | [Terraform](https://github.com/cwnit/toolkits/tree/master/collections/terraform) | [![CircleCI](badge)]|
+| [Powershell](https://github.com/cwnit/toolkits/tree/master/collections/powershell) | [![CircleCI](badge)]|
+| [Bashl](https://github.com/cwnit/toolkis/tree/master/collections/bash) | [![CircleCI](badge)]|
+
 
 [top](#top)
 
