@@ -43,7 +43,7 @@
 <li>Credentials are not encrypted</li>
 </ul>
 <p><em><strong>Input: </strong></em>No variables are needed for this. </p>
-<p><strong>Result:</strong> The variables are exported as enviorment variables.  Echo is turned on for validation but should not be included as a production script.</p>
+<p><em><strong>Result:</strong></em> The variables are exported as enviorment variables.  Echo is turned on for validation but should not be included as a production script.</p>
 </td>
 </tr>
 </tbody>
