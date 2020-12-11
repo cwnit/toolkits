@@ -1,6 +1,6 @@
 function copysheet() {
 
-    var name = "Sprint " + sprintval;
+    var name = "Name you want to give sheet";
     var ss = SpreadsheetApp.openById('google spreadsheet id');//Actions that are not active based on user interaction
     var sheet = ss.getSheetByName('sheet name to copy from').copyTo(ss);
 
