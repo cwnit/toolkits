@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 #PREREQUISTES
-#- Must have .aws credentials configure
+#- Must have .aws credentials configured
 
 INI_FILE=~/.aws/credentials
 awsprofile="[profilename]"
