@@ -1,4 +1,4 @@
-
+#!/usr/bin/env bash
 #PREREQUISTES
 #- Must have AWS CLI INSTALLED
 #- Must have appropriate permissions into System Manager and EC2 configured
