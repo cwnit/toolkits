@@ -5,7 +5,7 @@
   <tr>
     <td>
       <p align="Left"> <img src="./imgs/bashicon.png" width="195" height="100"> </p></td>
-    <td>CWN has created a project supporting Bash scripting that can help automate job functions.</td>
+    <td>CWN has created a project supporting Bash scripting that can help automate job functions.  Our intention is to collaborate withthe community and provide useful resources for engineers and developers.</td>
  </tr>
 </tbody>
 </table>
