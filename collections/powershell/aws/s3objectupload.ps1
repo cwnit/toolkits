@@ -20,9 +20,9 @@ $region = "us-east-1"
 $bucket = 'mys3bucket'
 
 #s3Folderlocation
-$keylocation = 'foldername'
+$keylocation = 'foldername' #for root director use "/""
 
-#The name of the file you are dowloading
+#The name of the file you are uploading
 $file = 'example.msi'
 
 #current User logged in
@@ -39,6 +39,5 @@ $accessKey = [Runtime.InteropServices.Marshal]::PtrToStringBSTR($accessKey)
 $secretKey = [Runtime.InteropServices.Marshal]::SecureStringToBSTR($secretKey)
 $secretKey = [Runtime.InteropServices.Marshal]::PtrToStringBSTR($secretKey)
 
-#EXECUTE COMMAND THAT DOWNLOADS CONTENT TO DEFAULT DOWNLOAD DIRECTORY
-
+#EXECUTE COMMAND THAT UPLOADS TO SPECIFIC S3 BUCKET FOLDER
 Write-S3Object -BucketName $bucket -File "$($filepath)\$($file)" -Key "$($keylocation)/$($file)" -AccessKey $accesskey -SecretKey $secretKey
