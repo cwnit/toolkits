@@ -1,5 +1,4 @@
 #VARIABLE DECLARATION
-RED='\033[0;31m'
 USERNAME='UserYourCreating'
 GROUPNAME='GroupYouAreCreating'
 
