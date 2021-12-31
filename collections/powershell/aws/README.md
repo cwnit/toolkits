@@ -35,7 +35,7 @@ PowerShell
 | ---------- | ------------ |
 | Powershell AWS Cmdlet | [Link](https://docs.aws.amazon.com/powershell/latest/reference/index.html) |
 | Powershell developer reference | [Link](https://devblogs.microsoft.com/scripting/table-of-basic-powershell-commands/) |
-| Powershell developer guides | [Link](https://docs.microsoft.com/en-us/powershell/scripting/developer/prog-guide/windows-powershell-programmer-s-guide?view=powershell-7.2) |
+| Powershell AWS Tools Documentation | [Link](https://docs.aws.amazon.com/powershell/) |
 
 
 
