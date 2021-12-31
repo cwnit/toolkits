@@ -4,7 +4,7 @@
 <tbody>
   <tr>
     <td>
-      <p align="Left"> <img src="./images/poweredby.png" width="195" height="75"> </p></td>
+      <p align="Left"> <img src="./imgs/security-scripting.png" width="195" height="75"> </p></td>
     <td>CWN has created a project that provides security aids for your organziation.  The tools here are designd to help provide the necessary mechanisms to support implementation compliance.</td>
  </tr>
 </tbody>
