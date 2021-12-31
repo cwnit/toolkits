@@ -33,7 +33,7 @@ PowerShell
 ## Developer Information ##
 | Material description | URL |
 | ---------- | ------------ |
-| Powershell Basics | [Link](https://docs.microsoft.com/en-us/learn/modules/introduction-to-powershell/) |
+| Powershell AWS Cmdlet | [Link](https://docs.aws.amazon.com/powershell/latest/reference/index.html) |
 | Powershell developer reference | [Link](https://devblogs.microsoft.com/scripting/table-of-basic-powershell-commands/) |
 | Powershell developer guides | [Link](https://docs.microsoft.com/en-us/powershell/scripting/developer/prog-guide/windows-powershell-programmer-s-guide?view=powershell-7.2) |
 
