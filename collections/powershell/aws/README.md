@@ -19,3 +19,24 @@
 [top](#top)
 
 ## Repository contents
+
+| Name of Module | Description | 
+| :------------- | :----------- | 
+| [**s3objectdownload.ps1**](https://github.com/cwnit/toolkits/blob/master/collections/powershell/aws/s3objectdownload.ps1) | The  |
+| [**s3objectupload.ps1**](https://github.com/cwnit/toolkits/blob/master/collections/powershell/aws/s3objectupload.ps1) | The  |
+
+# Usage
+PowerShell 
+
+*Source:  [Microsoft.com](https://docs.microsoft.com/en-us/powershell/scripting/overview?view=powershell-7.2)*
+
+## Developer Information ##
+| Material description | URL |
+| ---------- | ------------ |
+| Powershell Basics | [Link](https://docs.microsoft.com/en-us/learn/modules/introduction-to-powershell/) |
+| Powershell developer reference | [Link](https://devblogs.microsoft.com/scripting/table-of-basic-powershell-commands/) |
+| Powershell developer guides | [Link](https://docs.microsoft.com/en-us/powershell/scripting/developer/prog-guide/windows-powershell-programmer-s-guide?view=powershell-7.2) |
+
+
+
+[top](#top)
