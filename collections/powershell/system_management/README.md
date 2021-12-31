@@ -3,7 +3,7 @@
 <table style="width: 300px; float: left;" border="0" cellspacing="0">
 <tbody>
   <tr>
-    <td> </td>
+    <td> <p align="Left"> <img src="/imgs/powershell-scripting.png" width="195" height="100"> </p></td>
     <td>CWN has published scripts that can help system Administrators with their daily work routines.</td>
  </tr>
 </tbody>
