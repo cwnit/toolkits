@@ -25,11 +25,11 @@
 # Usage
 PowerShell is a modern command shell that includes the best features of other popular shells. Unlike most shells that only accept and return text, PowerShell accepts and returns .NET objects. The shell includes the following features:
 
-Robust command-line history
-Tab completion and command prediction (See about_PSReadLine)
-Supports command and parameter aliases
-Pipeline for chaining commands
-In-console help system, similar to Unix man pages
+- Robust command-line history
+- Tab completion and command prediction (See about_PSReadLine)
+- Supports command and parameter aliases
+- Pipeline for chaining commands
+- In-console help system, similar to Unix man pages
 
 *Source:  [Microsoft.com](https://docs.microsoft.com/en-us/powershell/scripting/overview?view=powershell-7.2)*
 
