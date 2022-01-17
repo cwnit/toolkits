@@ -2,7 +2,7 @@ resource "aws_codebuild_project" "codebuild_project_test" {
     name          = "cb-runner"
     description   = "Terraform codebuild project"
     build_timeout = "5"
-    service_role  = "arn:aws:iam::323186598383:role/service-role/cwn-cb-codebuild-test-service-role"
+    service_role  = "Codebuild Service Role arn"
 
     artifacts {
         type = "CODEPIPELINE"
