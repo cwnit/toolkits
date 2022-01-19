@@ -1,0 +1,71 @@
+version: 0.2
+env:
+  variables:
+    TF_VERSION: "0.13.2"
+    PY_VERSION: "3.9.6"
+    GIT_VERSION: "2.9.5"
+
+  parameter-store:
+    workload_env: workload_env
+    build_ssh_key: "build_ssh_key"
+    codecommit_config: codecommit_config
+
+  secrets-manger:
+    AWS_ACCOUNT: CodeBuild/aws_env_secrets:aws_account
+  
+  git-credential-helper: yes
+    
+  exported-variables:
+    - workload_env
+    - TF_VERSION
+    - build_ssh_key
+    
+phases:
+  install:
+    commands:
+      #  - echo `pwd`
+      - echo STARTING TERRAFORM INSTALLATION
+      - curl -s -qL -o terraform.zip https://releases.hashicorp.com/terraform/${TF_VERSION}/terraform_${TF_VERSION}_linux_amd64.zip
+      - unzip terraform -d /usr/bin/
+      - "chmod +x /usr/bin/terraform"
+      - "/usr/bin/terraform --version"
+      - echo "STARTING TFLINT INSTALATION"
+      - "curl -L -o /tmp/tflint.zip https://github.com/terraform-linters/tflint/releases/download/v0.21.0/tflint_linux_amd64.zip && unzip /tmp/tflint.zip -d /usr/local/bin"
+      - "tflint --version"
+      - echo "STARTING TFSEC INSTALLATION"
+      - "wget -O /usr/local/bin/tfsec https://github.com/tfsec/tfsec/releases/download/v0.36.6/tfsec-linux-amd64 && chmod +x /usr/local/bin/tfsec"
+      - "tfsec --version"
+      - echo "STARTING PYTHON INSTALLATION"
+      - "curl -s -qL -o python.tgz https://www.python.org/ftp/python/${PY_VERSION}/Python-${PY_VERSION}.tgz"
+      - "tar xf python.tgz -C /usr/bin/"
+      - "python --version"
+      - pip install git-remote-codecommit
+      #- "curl -s -qL -o git.tar.gz https://mirrors.edge.kernel.org/pub/software/scm/git/git-${GIT_VERSION}.tar.gz "
+      #- "tar xf git.tar.gz -C /usr/bin/git/"
+      - "aws --version"
+
+  pre_build:
+    commands:
+      - "echo BUILD SSH DIRECTORY"
+      - mkdir -p ~/.ssh
+      - echo "$build_ssh_key" > ~/.ssh/id_rsa
+      - cat ~/.ssh/id_rsa
+      - chmod 600 ~/.ssh/id_rsa
+      - echo "$codecommit_config" > ~/.ssh/config
+      - cat ~/.ssh/config
+      - chmod 600 ~/.ssh/config
+      - cd ~/.ssh
+      - ls
+      - git clone ssh://git-codecommit.us-east-1.amazonaws.com/v1/repos/ec2
+      #- git clone codecommit://ec2 local-ec2
+      - TF_VAR_ENV=$workload_env
+      - TF_VAR_AWS_ACCOUNT=$AWS_ACCOUNT
+      - export TF_VAR_ENV
+      - export TF_VAR_AWS_ACCOUNT
+
+  build:
+    commands: 
+      - 'cd "$CODEBUILD_SRC_DIR_src2"'
+      - terraform --version
+      - terraform init -input=false
+      - terraform plan -lock=false -input=false

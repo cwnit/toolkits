@@ -1,5 +1,5 @@
 resource "aws_codebuild_project" "codebuild_project_test" {
-    name          = "cb-runner"
+    name          = "${ENV}-cb-runner"
     description   = "Terraform codebuild project"
     build_timeout = "5"
     service_role  = "Codebuild Service Role arn"
@@ -27,7 +27,7 @@ resource "aws_codebuild_project" "codebuild_project_test" {
 }
 
 resource "aws_codepipeline" "foo" {
-  name     = "foo-pipeline"
+  name     = "${ENV}-foo-pipeline"
   role_arn = "codepipeline service role arn"
 
   artifact_store {
