@@ -6,8 +6,8 @@ env:
     GIT_VERSION: "2.9.5"
 
   parameter-store:
-    ssh_key: iha_codecommit_ssh_key
-    cc_user: iha_codecommit_user
+    ssh_key: variable_ssh_key
+    cc_user: variable_codecommit_user
  
   #secrets-manager:
     #ACCESS_KEY_ID2: secret-key-name/secret-value
