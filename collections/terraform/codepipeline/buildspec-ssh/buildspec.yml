@@ -29,7 +29,7 @@ phases:
 
   pre_build:
     commands:
-      #- ACCESS_KEY_ID=$(echo -n $(aws secretsmanager get-secret-value --secret-id test-iha-deployer/aws_access_key_id | jq -r .SecretString) | base64 -w 0)
+      #- ACCESS_KEY_ID=$(echo -n $(aws secretsmanager get-secret-value --secret-id secret-key-name/secret-value | jq -r .SecretString) | base64 -w 0)
       - aws --version
       - git --version
       
