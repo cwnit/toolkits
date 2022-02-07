@@ -3,3 +3,5 @@ Details to come on usage, real example of pipeline with multiple inputs (sources
 
 Reference article related to this repo whle under construction:
 https://stackoverflow.com/questions/48652545/setting-credentials-for-https-git-clone-in-aws-codebuild/71012745#71012745
+
+https://github.com/awslabs/aws-refarch-cross-account-pipeline
