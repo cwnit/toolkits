@@ -1,0 +1,83 @@
+version: 0.2
+env:
+  variables:
+    TF_VERSION: "0.13.2"
+    PY_VERSION: "3.9.6"
+    GIT_VERSION: "2.9.5"
+    CC_USER: "code_commit_user"
+
+  git-credential-helper: yes
+    
+  exported-variables:
+    - workload_env
+    - TF_VERSION
+    
+phases:
+  install:
+    commands:
+      #  - echo `pwd`
+      - echo UPDATING SSH CLIENT
+      - "which ssh-agent || ( apt-get update -y && apt-get install openssh-client -y )"
+      - echo STARTING TERRAFORM INSTALLATION
+      - curl -s -qL -o terraform.zip https://releases.hashicorp.com/terraform/${TF_VERSION}/terraform_${TF_VERSION}_linux_amd64.zip
+      - unzip terraform -d /usr/bin/
+      - "chmod +x /usr/bin/terraform"
+      - "/usr/bin/terraform --version"
+      - echo "STARTING TFLINT INSTALATION"
+      - "curl -L -o /tmp/tflint.zip https://github.com/terraform-linters/tflint/releases/download/v0.21.0/tflint_linux_amd64.zip && unzip /tmp/tflint.zip -d /usr/local/bin"
+      - "tflint --version"
+      - echo "STARTING TFSEC INSTALLATION"
+      - "wget -O /usr/local/bin/tfsec https://github.com/tfsec/tfsec/releases/download/v0.36.6/tfsec-linux-amd64 && chmod +x /usr/local/bin/tfsec"
+      - "tfsec --version"
+      - echo "STARTING PYTHON INSTALLATION"
+      - "curl -s -qL -o python.tgz https://www.python.org/ftp/python/${PY_VERSION}/Python-${PY_VERSION}.tgz"
+      - "tar xf python.tgz -C /usr/bin/"
+      - "python --version"
+      - python -m pip install -U pip
+      - pip install git-remote-codecommit
+
+  pre_build:
+    commands:
+      - aws --version
+      - git --version
+      
+      # ADDS A PRIVATE SSH KEEY TO ALLOW THE ABILITY TO CLONE OR INSTALL NPM FOR GIT REPOSOTORIES
+      - rootpath=$(pwd)
+      - eval $(ssh-agent -s)
+      - mkdir -p ~/.ssh
+
+      # Configure SSH Key
+      - ssh-keygen -t rsa -b 2048 -N '' -f ~/.ssh/cc_rsa <<< y
+      - cd ~/.ssh/
+      - cat cc_rsa
+      - NEW_SSHPublicKeyId=$(aws iam upload-ssh-public-key --user-name "${CC_USER}" --ssh-public-key-body "$(cat ~/.ssh/cc_rsa.pub)" --output text --query 'SSHPublicKey.SSHPublicKeyId')
+      - |
+        echo "Multiline command"
+        cat > ~/.ssh/config <<EOL
+        Host your-host-information
+            Hostname git-codecommit.us-east-1.amazonaws.com
+            User ${NEW_SSHPublicKeyId}
+            IdentityFile ~/.ssh/cc_rsa
+        EOL
+      - cat ~/.ssh/config
+      
+      # Configure SSH Permissions
+      - chmod 700 ~/.ssh
+      - chmod 600 ~/.ssh/config
+      - chmod 600 ~/.ssh/cc_rsa
+      - ssh-keyscan -t rsa1,rsa,dsa git-codecommit.us-east-1.amazonaws.com >> ~/.ssh/known_hosts
+
+      # Clone directories
+      - echo CLONE DIRECTORIES
+      - mkdir /usr/bin/repo
+      - cd /usr/bin/repo
+      - git clone ssh://your-host-information/v1/repos/your_repo_name
+      - git clone codecommit://your_repo_name new_repo_name
+      - nohup sleep 30 #for demo purposes remove if you don't need
+
+  build:
+    commands: 
+      - cd /usr/bin/repo
+    finally:
+      - aws iam delete-ssh-public-key --user-name $CC_USER --ssh-public-key-id $NEW_SSHPublicKeyId
+
