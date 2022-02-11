@@ -46,6 +46,23 @@
 <p><em><strong>Result:</strong></em> The variables are exported as enviorment variables.  Echo is turned on for validation but should not be included as a production script.</p>
 </td>
 </tr>
+<tr>
+<td><a href="https://github.com/cwnit/toolkits/blob/master/collections/bash/aws/secrets_manager_retrieval.sh">secrets_manager_retrieval.sh</a></td>
+<td>The script reads secrets from AWS Secrets Manager and exports that secret into a bash variable. AWS will respond with a JSON output which jq parses leveraging the key value to return the secret value.  This is then delcared as a variable in temporary memory for use with scripts. &nbsp;</td>
+<td>
+<p><em><strong>Limits:&nbsp;</strong></em></p>
+<ul>
+<li>AWS CLI must be installed.</li>
+<li>Must have appropriate permissions to secrets manager / secret.</li>
+<li>jq must be installed on the system.</li>
+<li>Credentials are not encrypted once declared as variable.</li>
+
+</ul>
+<p><em><strong>Input: </strong></em>User must know their AWS Secret name and value.  Value should be inputed in Secrets Manager format shown in this example: mysecret/mysecret_password </p>
+<p><em><strong>Result:</strong></em> If my secrets are set to "password123!" then my output leveraging the echo command will be: "The password is password123!".</p>
+</td>
+</tr>
+
 </tbody>
 </table>
 
