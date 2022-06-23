@@ -1,8 +1,8 @@
 resource "aws_codebuild_project" "codebuild_project_test" {
     name          = "${var.myname}-cb-runner"
-    description   = var.description
-    build_timeout = var.build_timeout
-    service_role  = var.cb_service_role
+    description   = "The purpose of your runner and what its doing"
+    build_timeout = "5"
+    service_role  = "Codebuild Service Role arn"
 
     artifacts {
         type = "NO_ARTIFACTS"
