@@ -3,7 +3,7 @@
 
 </p>
 
-Terraform AWS Simple EC2 Deployment with RDP:
+# Terraform AWS Simple EC2 Deployment with RDP:
 
 The Library provides a working sample of a network deployment that is used to deploy AWS environment with all networking components and a working EC2 instance.
 
