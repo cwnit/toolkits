@@ -4,13 +4,13 @@
 <table style="width: 300px; float: left;" border="0" cellspacing="0">
 <tbody>
   <tr>
-    <td>
-
-    <td> CWN has created a project supporting terraform modules for AWS that can help automate job functions. </td>
+    <td> CWN has created a project supporting terraform modules for AWS that can help automate job functions. 
+    </td>
  </tr>
 </tbody>
 </table>
 
+<br>
 
 ## Public domain
 
