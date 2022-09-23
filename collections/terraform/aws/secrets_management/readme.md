@@ -21,7 +21,7 @@
 </tr>
 <tr>
 <td> 
-<a href="https://github.com/cwnit/toolkits/blob/master/collections/terraform/aws/secrets_management/simple_secret.tf)">simple_secret.tf</a> </td>
+<a href="https://github.com/cwnit/toolkits/blob/master/collections/terraform/aws/secrets_management/simple_secret.tf">simple_secret.tf</a> </td>
 <td>The module allows users to create a simple secret in AWS Securets Manager.  Please note this is a single secret and not a key/value pair.  Refer to keyvalue seceret creation module to create a key/value secret. </td>
 <td>
 <p><em><strong>Limits:</strong></em> To create the secret your account will require permissions to make changes to secrets manager.  </p>
