@@ -19,7 +19,7 @@
 <td align="top"><strong>Description</strong></td>
 <td align="top"><strong>Usage</strong></td>
 </tr>
-<tr>
+<tr VALIGN=TOP>
 <td> 
 <a href="https://github.com/cwnit/toolkits/blob/master/collections/terraform/aws/secrets_management/simple_secret.tf">simple_secret.tf</a> </td>
 <td>The module allows users to create a simple secret in AWS Securets Manager.  Please note this is a single secret and not a key/value pair.  Refer to keyvalue seceret creation module to create a key/value secret. Note that the secret uses a unique resource to create a random secret which is called resource "random_password".  The resource can be removed if the intention is to pass the secret in.  Reference the article Handling Terraform Secrets to understand how to pass values in.  For more information about the random_password resource reference <a href="https://registry.terraform.io/providers/hashicorp/random/latest/docs/resources/string">hashicorp details page.</a> </td>
@@ -31,7 +31,7 @@
 <br><p><em><strong> Result:</strong></em> &nbsp;Secret will be created with unique password that is stored in secrets manager.</p> 
 </td>
 </tr>
-<tr>
+<tr VALIGN=TOP>
 <td> 
 <a href="https://github.com/cwnit/toolkits/blob/master/collections/terraform/aws/secrets_management/keyValue_secret.tf">keyValue_secret.tf</a> </td>
 <td>The module allows users to create a key / value secret that can be stored in AWS Secrets Manager. Note that the secret uses a unique resource to create a random secret which is called resource "random_password".  The resource can be removed if the intention is to pass the secret in.  Reference the article Handling Terraform Secrets to understand how to pass values in.  For more information about the random_password resource reference <a href="https://registry.terraform.io/providers/hashicorp/random/latest/docs/resources/string">hashicorp details page.</a> </td>
