@@ -5,11 +5,11 @@ Creates Random Secret into Secrets Manager.
 
 resource "random_password" "password" {
     length              = 16
-    special             = true
-    numeric             = true
-    upper               = true
-    lower               = true
-    override_special    = "_%@"
+    special             = true 
+    numeric             = true  
+    upper               = true  
+    lower               = true  
+    override_special    = "_%@" 
 }
 
 

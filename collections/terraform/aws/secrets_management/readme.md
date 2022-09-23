@@ -22,7 +22,7 @@
 <tr>
 <td> 
 <a href="https://github.com/cwnit/toolkits/blob/master/collections/terraform/aws/secrets_management/simple_secret.tf">simple_secret.tf</a> </td>
-<td>The module allows users to create a simple secret in AWS Securets Manager.  Please note this is a single secret and not a key/value pair.  Refer to keyvalue seceret creation module to create a key/value secret. </td>
+<td>The module allows users to create a simple secret in AWS Securets Manager.  Please note this is a single secret and not a key/value pair.  Refer to keyvalue seceret creation module to create a key/value secret. Note that the secret uses a unique resource to create a random secret which is called resource "random_password".  The resource can be removed if the intention is to pass the secret in.  Reference the article Handling Terraform Secrets to understand how to pass values in.  For more information about the random_password resource reference <a href="https://registry.terraform.io/providers/hashicorp/random/latest/docs/resources/string">hashicorp details page.</a> </td>
 <td>
 <p><em><strong>Limits:</strong></em> To create the secret your account will require permissions to make changes to secrets manager.  </p>
 <br><p><em><strong>Input:</strong></em>&nbsp;" Leverage the sample variables.tf that outlines the variables that need to be chnaged in order for you to execute module correctly.  All variables that must be updated with be marked with <strong>[Enter here]</strong></em>.
@@ -32,7 +32,7 @@
 <tr>
 <td> 
 <a href="https://github.com/cwnit/toolkits/blob/master/collections/terraform/aws/secrets_management/keyValue_secret.tf">keyValue.tf</a> </td>
-<td>The module allows users to create a key / value secret that can be stored in AWS Secrets Manager. </td>
+<td>The module allows users to create a key / value secret that can be stored in AWS Secrets Manager. Note that the secret uses a unique resource to create a random secret which is called resource "random_password".  The resource can be removed if the intention is to pass the secret in.  Reference the article Handling Terraform Secrets to understand how to pass values in.  For more information about the random_password resource reference <a href="https://registry.terraform.io/providers/hashicorp/random/latest/docs/resources/string">hashicorp details page.</a> </td>
 <td>
 <p><em><strong>Limits:</strong></em> To create the secret your account will require permissions to make changes to secrets manager.  </p>
 <br><p><em><strong>Input:</strong></em>&nbsp;" Leverage the sample variables.tf that outlines the variables that need to be chnaged in order for you to execute module correctly.  All variables that must be updated with be marked with <strong>[Enter here]</strong></em>.  In addition ensure you update information where designated as your information for input.
