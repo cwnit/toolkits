@@ -25,8 +25,18 @@
 <td>The module allows users to create a simple secret in AWS Securets Manager.  Please note this is a single secret and not a key/value pair.  Refer to keyvalue seceret creation module to create a key/value secret. </td>
 <td>
 <p><em><strong>Limits:</strong></em> To create the secret your account will require permissions to make changes to secrets manager.  </p>
-<br><p><em><strong>Input:</strong></em>&nbsp;" Leverage the sample variables.tf that outlines the variables that need to be chnaged in order for you to execute module correctly.  All variables that must be updated with be marked with em><strong>[Enter here]</strong></em>.
+<br><p><em><strong>Input:</strong></em>&nbsp;" Leverage the sample variables.tf that outlines the variables that need to be chnaged in order for you to execute module correctly.  All variables that must be updated with be marked with <strong>[Enter here]</strong></em>.
 <br>Result:</strong></em>&nbsp;Secret will be created with unique password that is stored in secrets manager.</p> 
+</td>
+</tr>
+<tr>
+<td> 
+<a href="">keyValue.tf</a> </td>
+<td>The module allows users to create a key / value secret that can be stored in AWS Secrets Manager. </td>
+<td>
+<p><em><strong>Limits:</strong></em> To create the secret your account will require permissions to make changes to secrets manager.  </p>
+<br><p><em><strong>Input:</strong></em>&nbsp;" Leverage the sample variables.tf that outlines the variables that need to be chnaged in order for you to execute module correctly.  All variables that must be updated with be marked with <strong>[Enter here]</strong></em>.  In addition ensure you update information where designated as your information for input.
+<br>Result:</strong></em>&nbsp;Secret will be created with unique Key / Value pairs witin Secrets Manager.</p> 
 </td>
 </tr>
 
@@ -45,6 +55,7 @@ Googlescript requires a foundational understanding of Javascript.  For those of 
 | Terraform basics | [Link](https://learn.hashicorp.com/terraform) |
 | Terraform Secrets Manager Developer Reference | [Link](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/secretsmanager_secret) |
 | Terraform developer guides | [Link](https://semaphoreci.com/blog/terraform) |
+| Handling Terraform Secrets | [Link](https://blog.gruntwork.io/a-comprehensive-guide-to-managing-secrets-in-your-terraform-code-1d586955ace1) |
 
 
 

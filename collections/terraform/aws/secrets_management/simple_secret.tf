@@ -20,6 +20,8 @@ resource "aws_secretsmanager_secret" "new_secret" {
 
     tags = {
         Name            = "Your tag"
+        DateCreated     = local.formaldate
+        LastModified    = local.formaldate
 
     }
   
