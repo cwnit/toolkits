@@ -31,7 +31,7 @@
 </tr>
 <tr>
 <td> 
-<a href="">keyValue.tf</a> </td>
+<a href="https://github.com/cwnit/toolkits/blob/master/collections/terraform/aws/secrets_management/keyValue_secret.tf">keyValue.tf</a> </td>
 <td>The module allows users to create a key / value secret that can be stored in AWS Secrets Manager. </td>
 <td>
 <p><em><strong>Limits:</strong></em> To create the secret your account will require permissions to make changes to secrets manager.  </p>
