@@ -22,18 +22,18 @@
 <table border="0" cellspacing="0">
 <tbody>
 <tr>
-<td align="top"><strong>Name of Module</strong></td>
-<td align="top"><strong>Description</strong></td>
-<td align="top"><strong>Usage</strong></td>
+<td align="top" width="25%"><strong>Name of Module</strong></td>
+<td align="top" width="75%"><strong>Description</strong></td>
+<td align="top" width="100%"><strong>Usage</strong></td>
 </tr>
 <tr VALIGN=TOP>
-  <td width="25%"> 
+  <td> 
     <a href="https://github.com/cwnit/toolkits/blob/master/collections/powershell/aws/s3objectdownload.ps1">s3objectdownload.ps1</a>
   </td>
-  <td width="75%">
+  <td>
   The script is used to download S3 files from a target S3 bucket to a windows machine into the users download directory.  The script assumes that this is interactive and users can provide AWS Credentials to the script.
   </td>
-  <td width="100%">
+  <td>
   <p><em><strong>Limits:</strong></em> Script requires that users provide necessary AWS Access Key and AWS Secret Keys in order for the script to run. Keys should have the necessary permissions to access S3 bucket.  It also assumes that Powershell is allowed to run on the machine and that AWS Powershell module is installed on the machine where the script is being run.</p><br>
   <p><em><strong>Input:</strong></em>&nbsp; The script requires variables to be set in order to run appropriately.  The following are variables that need to be updated in order to run the script:
 
