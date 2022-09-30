@@ -23,7 +23,7 @@
 <tbody>
 <tr>
 <td align="top" width="25%"><strong>Name of Module</strong></td>
-<td align="top" width="100%"><strong>Description      |</strong></td>
+<td align="top" width="100%"><strong>Description</strong></td>
 <td align="top" width="50%"><strong>Usage</strong></td>
 </tr>
 <tr VALIGN=TOP>
@@ -32,10 +32,6 @@
   </td>
   <td>
   The script is used to download S3 files from a target S3 bucket to a windows machine into the users download directory.  The script assumes that this is interactive and users can provide AWS Credentials to the script.
-  </td>
-  <td>
-  <p><em><strong>Limits:</strong></em> Script requires that users provide necessary AWS Access Key and AWS Secret Keys in order for the script to run. Keys should have the necessary permissions to access S3 bucket.  It also assumes that Powershell is allowed to run on the machine and that AWS Powershell module is installed on the machine where the script is being run.</p><br>
-  <p><em><strong>Input:</strong></em>&nbsp; The script requires variables to be set in order to run appropriately.  The following are variables that need to be updated in order to run the script:
 
   ```
   $accessKey = AWS Access Key for the account where its being executed.
@@ -49,6 +45,12 @@
   $file = "The file you wish to download."
 
   ```
+
+  </td>
+  <td>
+  <p><em><strong>Limits:</strong></em> Script requires that users provide necessary AWS Access Key and AWS Secret Keys in order for the script to run. Keys should have the necessary permissions to access S3 bucket.  It also assumes that Powershell is allowed to run on the machine and that AWS Powershell module is installed on the machine where the script is being run.</p><br>
+  <p><em><strong>Input:</strong></em>&nbsp; The script requires variables to be set in order to run appropriately.  The following are variables that need to be updated in order to run the script:
+
   It should be understood that the $username will capture the local logged on user. </p>
   <p><em><strong>Result:</strong></em>&nbsp;The target file will be downloaded in the users Download directory.  This is done intentionally to ensure permissions are allowed in the event the operating system is restricted.</p>
 
@@ -61,11 +63,6 @@
   </td>
   <td>
     The script allows users to upload files into AWS S3 Bucket from a windows machine using Powershell.  The script assumes that there is an interactive login to execute the script.
-  </td>
-  <td>
-  <p><em><strong>Limits:</strong></em> Script requires that users provide necessary AWS Access Key and AWS Secret Keys in order for the script to run. Keys should have the necessary permissions to access S3 bucket.  It also assumes that Powershell is allowed to run on the machine and that AWS Powershell module is installed on the machine where the script is being run.  Note that the script assumes that target file will be within the download directory.</p><br>
-
-  <p><em><strong>Input:</strong></em>&nbsp;" The script requires variables to be set in order to run appropriately.  The following are variables that need to be updated in order to run the script:
 
   ```
     $accessKey = AWS Access Key for the account where its being executed.
@@ -78,6 +75,12 @@
 
     $file = "The file you wish to upload."
   ```
+  </td>
+  <td>
+  <p><em><strong>Limits:</strong></em> Script requires that users provide necessary AWS Access Key and AWS Secret Keys in order for the script to run. Keys should have the necessary permissions to access S3 bucket.  It also assumes that Powershell is allowed to run on the machine and that AWS Powershell module is installed on the machine where the script is being run.  Note that the script assumes that target file will be within the download directory.</p><br>
+
+  <p><em><strong>Input:</strong></em>&nbsp;" The script requires variables to be set in order to run appropriately.  The following are variables that need to be updated in order to run the script:
+
   It should be understood that the $username will capture the local logged on user.</p><br>
   <p><em><strong>Result:</strong></em>&nbsp;The target file will be Uploaded, we suggest you in the users Download directory.  This is done intentionally to ensure permissions are allowed in the event the operating system is restricted.</p>
 </tr>
