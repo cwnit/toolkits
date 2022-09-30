@@ -106,6 +106,24 @@
 
   <p><em><strong>Result:</strong></em>&nbsp;The script output will create a variable that is a securestring to be reused.</p>
 </tr>
+<tr VALIGN=TOP>
+  <td> 
+    <a href="">multi-keyvalue-secret.ps1</a><br>
+    <p align="Left"> <img src="./images/secret-multi-key-value.png" width="195" height="75"> </p><br><br>
+    The script allows users to use powershell to retrieve a multi value key / value secret from AWS Secrets Manager. It creates an array that can be used to select the value from the key / value.
+  
+  </td>
+  <td>
+  <p><em><strong>Limits:</strong></em> The script assumes that the user running it has the necessary policies to read the secrets.  The assumption is also that the user has configured their AWS Keys on the system.  See example policy provided in the ps1.</p><br>
+
+  <p><em><strong>Input:</strong></em>&nbsp;" Users of the script will need to set the follow variables to execute script:
+  
+  $sm_value = The name of the secret you are trying to access.</p><br>
+  
+  As part of the key value secret you need to ensure that you change the array value as shown in the script example.  
+
+  <p><em><strong>Result:</strong></em>&nbsp;The script output will create a variable that is a securestring to be reused.</p>
+</tr>
 
 </tbody>
 </table>
