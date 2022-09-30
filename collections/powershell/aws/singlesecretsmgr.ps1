@@ -14,7 +14,8 @@ $newsecuresecret = ConvertTo-SecureString -String $mysecret -AsPlainText -Force
 
 
 <#
-Example AWS Policy
+Example AWS Policy that needs to be in place for your script to retrive secret.
+Assign policy to IAM Role and attach it to a person, ec2, database, or container
 {
     "Version": "2012-10-17",
     "Statement": [
