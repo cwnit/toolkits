@@ -24,7 +24,7 @@
 <tr>
 <td align="top" width="25%"><strong>Name of Module</strong></td>
 <td align="top" width="75%"><strong>Description</strong></td>
-<td align="top" width="100%"><strong>Usage</strong></td>
+<td align="top" width="50%"><strong>Usage</strong></td>
 </tr>
 <tr VALIGN=TOP>
   <td> 
