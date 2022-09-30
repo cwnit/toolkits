@@ -21,7 +21,7 @@ resource "aws_codebuild_project" "codebuild_project_test" {
         type              = "CODECOMMIT"
         buildspec         = "buildspec.yml"
         git_clone_depth   = 0
-        location          = https://git-codecommit.us-east-1.amazonaws.com/v1/repos/[repo_name]" #MUST BE THE HTTPS URL!!
+        location          = "https://git-codecommit.us-east-1.amazonaws.com/v1/repos/[repo_name]" #MUST BE THE HTTPS URL!!
         
     }
 
