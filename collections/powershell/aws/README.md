@@ -108,7 +108,7 @@
 </tr>
 <tr VALIGN=TOP>
   <td> 
-    <a href="">multi-keyvalue-secret.ps1</a><br>
+    <a href="https://github.com/cwnit/toolkits/blob/master/collections/powershell/aws/multi-keyvalue-secret.ps1">multi-keyvalue-secret.ps1</a><br>
     <p align="Left"> <img src="./images/secret-multi-key-value.png" width="195" height="75"> </p><br><br>
     The script allows users to use powershell to retrieve a multi value key / value secret from AWS Secrets Manager. It creates an array that can be used to select the value from the key / value.
   
