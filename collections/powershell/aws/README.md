@@ -23,16 +23,12 @@
 <tbody>
 <tr>
 <td align="top" width="25%"><strong>Name of Module</strong></td>
-<td align="top" width="25%"><strong>Description</strong></td>
 <td align="top" width="75%"><strong>Usage</strong></td>
 </tr>
 <tr VALIGN=TOP>
   <td> 
-    <a href="https://github.com/cwnit/toolkits/blob/master/collections/powershell/aws/s3objectdownload.ps1">s3objectdownload.ps1</a>
-  </td>
-  <td>
-  The script is used to download S3 files from a target S3 bucket to a windows machine into the users download directory.  The script assumes that this is interactive and users can provide AWS Credentials to the script.
-
+    <a href="https://github.com/cwnit/toolkits/blob/master/collections/powershell/aws/s3objectdownload.ps1">s3objectdownload.ps1</a><br><br>
+    The script is used to download S3 files from a target S3 bucket to a windows machine into the users download directory.  The script assumes that this is interactive and users can provide AWS Credentials to the script.
   </td>
   <td>
   <p><em><strong>Limits:</strong></em> Script requires that users provide necessary AWS Access Key and AWS Secret Keys in order for the script to run. Keys should have the necessary permissions to access S3 bucket.  It also assumes that Powershell is allowed to run on the machine and that AWS Powershell module is installed on the machine where the script is being run.</p><br>
@@ -56,9 +52,7 @@
 
 <tr VALIGN=TOP>
   <td> 
-    <a href="https://github.com/cwnit/toolkits/blob/master/collections/powershell/aws/s3objectupload.ps1">s3objectupload.ps1</a>
-  </td>
-  <td>
+    <a href="https://github.com/cwnit/toolkits/blob/master/collections/powershell/aws/s3objectupload.ps1">s3objectupload.ps1</a><br><br>
     The script allows users to upload files into AWS S3 Bucket from a windows machine using Powershell.  The script assumes that there is an interactive login to execute the script.
   </td>
   <td>
@@ -81,10 +75,8 @@
 </tr>
 <tr VALIGN=TOP>
   <td> 
-    <a href="https://github.com/cwnit/toolkits/blob/master/collections/powershell/aws/singlesecretsmgr.ps1">singlesecretsmgr.ps1</a><br>
-    <p align="Left"> <img src="./images/secret-single-secret.png" width="195" height="75"> </p>
-  </td>
-  <td>
+    <a href="https://github.com/cwnit/toolkits/blob/master/collections/powershell/aws/singlesecretsmgr.ps1">singlesecretsmgr.ps1</a><br><br>
+    <p align="Left"> <img src="./images/secret-single-secret.png" width="195" height="75"> </p><br>
     The script allows users to use powershell to retrieve a single secret value from secrets manager.  Note that this is for a single value and not a key / value pair.
   </td>
   <td>
@@ -99,10 +91,9 @@
 <tr VALIGN=TOP>
   <td> 
     <a href="">keyvaluesecret.ps1</a><br>
-    <p align="Left"> <img src="./images/secret-key-value.png" width="195" height="75"> </p>
-  </td>
-  <td>
+    <p align="Left"> <img src="./images/secret-key-value.png" width="195" height="75"> </p><br><br>
     The script allows users to use powershell to retrieve a key / value secret from AWS Secrets Manager. It creates an array that can be used to select the value from the key / value.
+  
   </td>
   <td>
   <p><em><strong>Limits:</strong></em> The script assumes that the user running it has the necessary policies to read the secrets.  The assumption is also that the user has configured their AWS Keys on the system.  See example policy provided in the ps1.</p><br>
