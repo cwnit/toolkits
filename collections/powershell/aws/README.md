@@ -79,6 +79,23 @@
   It should be understood that the $username will capture the local logged on user.</p><br>
   <p><em><strong>Result:</strong></em>&nbsp;The target file will be Uploaded, we suggest you in the users Download directory.  This is done intentionally to ensure permissions are allowed in the event the operating system is restricted.</p>
 </tr>
+<tr VALIGN=TOP>
+  <td> 
+    <a href="https://github.com/cwnit/toolkits/blob/master/collections/powershell/aws/singlesecretsmgr.ps1">singlesecretsmgr.ps1</a><br>
+    <p align="Left"> <img src="./images/secret-single-secret.png" width="195" height="75"> </p>
+  </td>
+  <td>
+    The script allows users to use powershell to retrieve a single secret value from secrets manager.  Note that this is for a single value and not a key / value pair.
+  </td>
+  <td>
+  <p><em><strong>Limits:</strong></em> The script assumes that the user running it has the necessary policies to read the secrets.  The assumption is also that the user has configured their AWS Keys on the system.</p><br>
+
+  <p><em><strong>Input:</strong></em>&nbsp;" Users of the script will need to set the follow variables to execute script:
+  
+  $sm_value = The name of the secret you are trying to access.</p><br>
+  
+  <p><em><strong>Result:</strong></em>&nbsp;The script output will create a variable that is a securestring to be reused.</p>
+</tr>
 
 </tbody>
 </table>

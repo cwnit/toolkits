@@ -1,6 +1,6 @@
 <#---------------------------------------------------------------------------------------------------
 SCRIPT NAME:  GET SINGLE SECRET FROM AWS SECRETS MANAGER
-DESCRIPTION:  Run this script as a scheduled task that runs daily to update admin password
+
 ---------------------------------------------------------------------------------------------------#>
 
 
