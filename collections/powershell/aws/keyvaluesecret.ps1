@@ -6,19 +6,19 @@ SCRIPT NAME:  RETRIVES A SECRET FROM SECRETS MANAGER THAT HAS A KEY AND VALUE
 
 $sm_value = "Name of your secret"
 
-$aws_secret = Get-SECSecretValue -SecretId $sm_value
+$aws_secret = Get-SECSecretValue -SecretId $sm_value #this gets the entire json string with the secret name and value
 
 $mysecret = $aws_secret.SecretString | ConvertFrom-Json
 
-$myretrievedsecret = $mysecret.secretname #see json response below, adjust the array value
+$myretrievedsecret = $mysecret.secretname #see json response below, adjust the array value, secretname should be replaced with your secrets name
 
 $newsecret = ConvertTo-SecureString -String $myretrievedsecret -AsPlainText -Force
 
 
 
 <#
-    JSON RESPONSE FROM Get-SECSecretValue
-    {"secretname":"secretvalue"}
+    EXAMPLE JSON RESPONSE FROM Get-SECSecretValue
+    {"secretname":"secretvalue"} #Standard secrets manage response when you call it.
 
 
 
