@@ -17,8 +17,14 @@ $newsecret = ConvertTo-SecureString -String $myretrievedsecret -AsPlainText -For
 
 
 <#
+<<<<<<< Updated upstream
     EXAMPLE JSON RESPONSE FROM Get-SECSecretValue
     {"secretname":"secretvalue"} #Standard secrets manage response when you call it.
+=======
+    
+JSON RESPONSE FROM Get-SECSecretValue
+    {"secretname":"secretvalue"}
+>>>>>>> Stashed changes
 
 
 

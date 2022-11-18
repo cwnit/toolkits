@@ -31,7 +31,7 @@ resource "aws_secretsmanager_secret_version" "new_secret" {
     secret_string       = jsonencode(
     {
         "Current": local.securestring,  // value 1
-        "Previous": "None",             // value 2
+        "Previous": "sampleP@55w0rd",             // value 2
         "Your Name": "your value"       // value 3 can be added seperated by comma and so on
     })
 

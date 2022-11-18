@@ -5,7 +5,7 @@
   <tr>
     <td>
       <p align="Left"> <img src="./images/poweredby.png" width="195" height="75"> </p></td>
-    <td>CWN has created a project supporting AWS Powershell modules that can help automate AWS functions.</td>
+    <td>CWN has created a project supporting AWS Powershell modules that can help automate AWS functions.  Please note for Lambda you will need Powershell 6.x or better. </td>
  </tr>
 </tbody>
 </table>
