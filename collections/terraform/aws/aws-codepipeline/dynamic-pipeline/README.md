@@ -1,6 +1,7 @@
 # terraform dynamic pipeline
 
 ------------
+The current readme assumes that developers have a general understanding of AWS Codepipeline and have built a codepipeline preivously.  If this is your first time looking at AWS Codepipeline please refer to other sameples provided by CWN that outline the basics of using AWS Codepipeoine.
 
 The Terraform Dynamic pipeline will allow terraform developers working in AWS to create an AWS Codepipeline with Dynamic Stages.  The key to a dynamic pipline is centered around ensuring that the stages and actions are able to support each stage and an action in every stage.  There are variations where people have gone for dynamic actions which can also work but if you want your entire pipeline to be dynamic than you need to consider the stage as the actual dynamic port of the pipeline.
 
@@ -130,10 +131,9 @@ stages = {
     }
 }
 
-
 ```
 
-Note that the stages must be wrapped in brakcets `{ }` to capsulate it properly to meet the map variable designation.  
+Note that the stages must be wrapped in brackets `{ }` to capsulate it properly to meet the map variable designation.  Also they do not require any seperators.
 
 **Configuring Actions**
 
@@ -160,9 +160,25 @@ stages = {
             }  
         }
     }
+    stage_2 = {
+        name = "build"
+        action_2 = {
+            run_order = 2
+            name = "linting_action"
+                .
+                ..
+            configurations = {
+                EnvironmentVariables = jsonencode(local.action_name_stage_refernece_variables)
+            }
+        }  
+        .
+        ..
+        ...
+    }
+}
 ```
 
-Note that multple actions must be seperated by commas
+Note that multple actions must be seperated by commas, a sample of this can be seen in the locals.tf file.  Also see in Stage 2 I referenced our sample variable to complete the example.  You can see how enviornment variables are consumed into this module.
 
 ------------
 
