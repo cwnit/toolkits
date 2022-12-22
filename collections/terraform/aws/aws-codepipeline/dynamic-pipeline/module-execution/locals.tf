@@ -53,10 +53,10 @@ BUILD YOUR STAGES
 
   code_pipeline = {
     codepipeline-configs = {
-      code_pipeline_role_arn = var.cp_arn
+      code_pipeline_role_arn = "arn:aws:iam::aws_account_name:role/role_name"
       artifact_store = {
-        type            = var.cp_artifact_type
-        artifact_bucket = var.cp_artifact_bucketname
+        type            = "S3"
+        artifact_bucket = "your-aws-bucket-name"
       }
       stages = {
         stage_1 = {
