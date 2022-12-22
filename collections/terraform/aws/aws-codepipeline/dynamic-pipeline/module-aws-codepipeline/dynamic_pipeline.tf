@@ -1,6 +1,6 @@
 
 
-esource "aws_codepipeline" "codepipeline" {
+resource "aws_codepipeline" "codepipeline" {
   for_each = var.code_pipeline
   name     = "${local.name_prefix}-${var.AppName}"
   role_arn = each.value["code_pipeline_role_arn"]
