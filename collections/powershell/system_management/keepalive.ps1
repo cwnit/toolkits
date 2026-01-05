@@ -1,23 +1,46 @@
-#CREATE DIRECTORY WHERE INSTALLATION FILES EXISTS
-$path = "C:\Utilities"
-If(!(test-path -PathType container $path))
-{
-      New-Item -ItemType Directory -Path $path
+function checkend($endtime){
+    if((Get-Date) -ge $endtime){
+        return $false
+    }
+    return $true
 }
 
-$folders = "bigfix", "fireeye", "Carbon_Black_Protection", "tenable-nessusagent", "secureconnector", "server_certificates", "winlogbeat", "solarWinds-agent", "endgame", "powershell"
+Clear-Host
 
-#BUILD Local Folders
-foreach ($folder in $folders) {
+$start = Get-Date
 
-    $folderkey = "utilities/packages/windows/$folder"
-    $folderpath = "C:\utilities\packages\$folder"
+$minutes = Read-Host "Enter the number of minutes to keep the script running (default: 90 minutes):"
+if ([string]::IsNullOrWhiteSpace($minutes)) {
+    $minutes = 90
+} else {
+    $minutes = [int]$minutes
+}
 
-    echo "Folde key: $folderkey"
+$end = $start.AddMinutes($minutes)
+$continue = $true
 
-    Read-S3Object -BucketName "iha-test-mgt-ami-packages-s3" -KeyPrefix $folderkey -folder $folderpath  
+Echo "Keep your computer awake with scroll lock | start $start | end $end"
 
-    echo "s3 downloaded"
+$confirmation = Read-Host "Press 'Y' to continue and keep your computer awake. Press any other key to exit."
 
+if ($confirmation -eq 'Y' -or $confirmation -eq 'y'){
+    Echo "Starting the script..."
+    Echo "Timestamp: $(Get-Date)"
 
+    $WShell = New-Object -ComObject "Wscript.Shell"
+
+    while ($continue){
+        $WShell.SendKeys("{SCROLLLOCK}")
+        if ($continue -eq $true){
+            Start-Sleep -Milliseconds 100
+            $WShell.SendKeys("{SCROLLLOCK}")
+            Start-Sleep -Seconds 240
+        }
+        $continue = checkend($end)
+        Echo "Checking time: $(Get-Date) | $continue"
+    }
+    
+    echo "Script has completed succesfully"
+} else {
+    Echo "Exiting Script no valid value has been entered."
 }
